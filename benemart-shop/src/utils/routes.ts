@@ -5,5 +5,6 @@ export const ROUTES = {
   ACCOUNT: "/my-account",
   TERMS: "/terms",
   POLICY: "/privacy",
-  COLLECTIONS: "/collections"
+  COLLECTIONS: "/collections",
+  SEARCH: "/search",
 };
