@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 const PageHeader: React.FC<HeaderProps> = ({
-	pageSubHeader = "text-page-explore",
+	pageSubHeader = "explore",
 	pageHeader = "text-page-header",
 }) => {
 
