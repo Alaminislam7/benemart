@@ -1,9 +1,12 @@
-import React from 'react'
+import Layout from '@/components/layout/layout';
+import ErrorInformation from '@/components/404/error-information';
 
-const ErrorPage = () => {
+export default function ErrorPage() {
   return (
-    <div>404</div>
-  )
+    <>
+      <ErrorInformation />
+    </>
+  );
 }
 
-export default ErrorPage;
+ErrorPage.Layout = Layout;

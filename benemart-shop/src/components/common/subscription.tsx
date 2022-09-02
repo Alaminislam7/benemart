@@ -1,5 +1,5 @@
 import Text from "@/components/ui/text";
-import Input from "@/components/ui/input";
+import Input from "@/components/ui/form/input";
 import Button from "@/components/ui/button";
 import { useForm } from "react-hook-form";
 
