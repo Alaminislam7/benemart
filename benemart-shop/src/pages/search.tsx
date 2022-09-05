@@ -1,6 +1,8 @@
 import { BreadcrumbItems } from '@/components/common/breadcrumb'
+import { ShopFilters } from '@/components/shop/filters'
 import ActiveLink from '@/components/ui/active-link'
 import Container from '@/components/ui/container'
+import { ProductGrid } from "@/components/product/product-grid";
 import { ROUTES } from '@/utils/routes'
 import React from 'react'
 import ReactStickyBox from 'react-sticky-box'
@@ -27,11 +29,12 @@ const Shop = () => {
 									</ActiveLink>
               </BreadcrumbItems>
             </div>
-            <h3>Shop Filters Items</h3>
+            <ShopFilters />
           </ReactStickyBox>
         </div>
         <div className="w-full lg:-ms-9">
-          <h3>Product Section</h3>
+          search top bar
+          <ProductGrid />
         </div>
       </div>
     </Container>
