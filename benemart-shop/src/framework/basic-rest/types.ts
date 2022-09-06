@@ -50,3 +50,12 @@ export type Product = {
   variations?: object;
   [key: string]: unknown;
 };
+
+export type Brand = {
+  id: number | string;
+  name: string;
+  slug: string;
+  image?: Attachment;
+  background_image?: any;
+  [key: string]: unknown;
+};
