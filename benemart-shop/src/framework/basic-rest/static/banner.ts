@@ -1,3 +1,40 @@
+export const homeThreeProductsBanner = [
+  {
+    id: 1,
+    title: "Sale Offer",
+    slug: "sale-offer",
+    image: {
+      mobile: {
+        url: "/assets/images/banner/banner-sale-offer.jpg",
+        width: 430,
+        height: 600,
+      },
+      desktop: {
+        url: "/assets/images/banner/banner-sale-offer.jpg",
+        width: 430,
+        height: 600,
+      },
+    },
+  },
+  {
+    id: 2,
+    title: "New Sports",
+    slug: "new-sports",
+    image: {
+      mobile: {
+        url: "/assets/images/banner/banner-sale-offer-reverse.jpg",
+        width: 430,
+        height: 600,
+      },
+      desktop: {
+        url: "/assets/images/banner/banner-sale-offer-reverse.jpg",
+        width: 430,
+        height: 600,
+      },
+    },
+  },
+];
+
 export const promotionBannerTwo = [
 	{
 		id: 1,
