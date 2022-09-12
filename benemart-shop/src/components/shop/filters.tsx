@@ -2,6 +2,9 @@ import { useRouter } from "next/router";
 import {FilteredItem} from "./filteredItem"
 import isEmpty from "lodash/isEmpty";
 import { CategoryFilter } from "@/components/shop/category-filter";
+import { PriceFilter } from "@/components/shop/price-filter";
+import { BrandFilter } from "@/components/shop/brand-filter";
+import { ColorFilter } from "@/components/shop/color-filter";
 
 export const ShopFilters: React.FC = () => {
   const router = useRouter();
@@ -42,6 +45,9 @@ export const ShopFilters: React.FC = () => {
 			</div>
 
 			<CategoryFilter />
+			<PriceFilter />
+			<BrandFilter />
+			<ColorFilter />
 		</div>
   )
 }
