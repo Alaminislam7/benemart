@@ -3,7 +3,7 @@ import SectionHeader from "@/components/common/section-header";
 import ProductCard from "@/components/product/product-card";
 import ProductCardListSmallLoader from "@/components/ui/loaders/product-card-small-list-loader";
 import { useOnSellingProductsQuery } from "@/framework/basic-rest/product/product-on-selling";
-import { homeThreeProductsBanner as banner } from "@/framework/basic-rest/static/banner";
+import { homeProductsBanner as banner } from "@/framework/basic-rest/static/banner";
 import Alert from "@/components/ui/alert";
 import { ROUTES } from "@/utils/routes";
 

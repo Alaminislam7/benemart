@@ -1,6 +1,6 @@
 import BannerCard from "@/components/common/banner-card";
 import Carousel from "@/components/ui/carousel/carousel";
-import { homeOneHeroBanner as banners } from "@/framework/basic-rest/static/banner";
+import { homeHeroBanner as banners } from "@/framework/basic-rest/static/banner";
 import { useWindowSize } from "@/utils/use-window-size";
 import { ROUTES } from "@/utils/routes";
 import { SwiperSlide } from "swiper/react";

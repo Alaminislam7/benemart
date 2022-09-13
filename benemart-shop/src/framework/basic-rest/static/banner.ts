@@ -1,4 +1,58 @@
-export const homeThreeProductsBanner = [
+export const homeCollectionBanner = [
+  {
+    id: 1,
+    title: "New Backpack",
+    slug: "new-backpack",
+    image: {
+      mobile: {
+        url: "/assets/images/banner/banner-mobile-6.png",
+        width: 450,
+        height: 180,
+      },
+      desktop: {
+        url: "/assets/images/banner/banner-6.jpg",
+        width: 1800,
+        height: 570,
+      },
+    },
+  },
+  {
+    id: 2,
+    title: "Men's Collection",
+    slug: "men's-collection",
+    image: {
+      mobile: {
+        url: "/assets/images/banner/banner-mobile-5.png",
+        width: 480,
+        height: 180,
+      },
+      desktop: {
+        url: "/assets/images/banner/banner-5.jpg",
+        width: 1800,
+        height: 570,
+      },
+    },
+  },
+  {
+    id: 3,
+    title: "Offer Off Everything",
+    slug: "offer-everything",
+    image: {
+      mobile: {
+        url: "/assets/images/banner/banner-mobile-4.jpg",
+        width: 450,
+        height: 130,
+      },
+      desktop: {
+        url: "/assets/images/banner/banner-4.jpg",
+        width: 1800,
+        height: 420,
+      },
+    },
+  },
+];
+
+export const homeProductsBanner = [
   {
     id: 1,
     title: "Sale Offer",
@@ -89,7 +143,7 @@ export const promotionBannerTwo = [
 	},
 ];
 
-export const homeOneHeroBanner = [
+export const homeHeroBanner = [
 	{
 		id: 1,
 		title: "cold collection",

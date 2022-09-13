@@ -9,6 +9,7 @@ export const API_ENDPOINTS = {
   SEARCH: "/search.json",
   BRANDS: "/brands.json",
   ON_SELLING_PRODUCTS: "/products_on_selling.json",
+  BEST_SELLER_PRODUCTS: "/products_best_seller.json",
 };
 
 
