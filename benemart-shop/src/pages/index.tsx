@@ -24,6 +24,8 @@ export default function Home() {
 					href={`${ROUTES.COLLECTIONS}/${banner[2].slug}`}
 					className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
 				/>
+        {/* new arrivale */}
+        {/* exclusive */}
         <BestSellerProduct/>
       </Container>
     </>
