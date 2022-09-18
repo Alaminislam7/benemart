@@ -47,7 +47,7 @@ const LoginForm: React.FC = () => {
 					<Logo />
 				</div>
 				<p className="text-sm md:text-base text-body mt-2 mb-8 sm:mb-10">
-					{"common:login-helper"}
+					{"Login with your email & password"}
 				</p>
 			</div>
 			<form
@@ -57,24 +57,24 @@ const LoginForm: React.FC = () => {
 			>
 				<div className="flex flex-col space-y-3.5">
           <Input
-						labelKey="forms:label-email"
+						labelKey="Email*"
 						type="email"
 						variant="solid"
 						{...register("email", {
-							required: `${"forms:email-required"}`,
+							required: `${"email required"}`,
 							pattern: {
 								value:
 									/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-								message: "forms:email-error",
+								message: "email error",
 							},
 						})}
 						errorKey={errors.email?.message}
 					/>
 					<PasswordInput
-						labelKey="forms:label-password"
+						labelKey="Password"
 						errorKey={errors.password?.message}
 						{...register("password", {
-							required: `${"forms:password-required"}`,
+							required: `${"password required"}`,
 						})}
 					/>
 					<div className="flex items-center justify-center">
@@ -92,7 +92,7 @@ const LoginForm: React.FC = () => {
 								htmlFor="remember"
 								className="flex-shrink-0 text-sm text-heading ps-3 cursor-pointer"
 							>
-								{"forms:label-remember-me"}
+								{"Remember me"}
 							</label>
 						</div>
 						<div className="flex ms-auto">
@@ -101,7 +101,7 @@ const LoginForm: React.FC = () => {
 								onClick={handleForgetPassword}
 								className="text-end text-sm text-heading ps-3 underline hover:no-underline focus:outline-none"
 							>
-								{"common:text-forgot-password"}
+								{"forgot password"}
 							</button>
 						</div>
 					</div>
@@ -112,7 +112,7 @@ const LoginForm: React.FC = () => {
 							disabled={isLoading}
 							className="h-11 md:h-12 w-full mt-1.5"
 						>
-							{"common:text-login"}
+							{"Login"}
 						</Button>
 					</div>
 				</div>
@@ -120,7 +120,7 @@ const LoginForm: React.FC = () => {
 			<div className="flex flex-col items-center justify-center relative text-sm text-heading mt-6 mb-3.5">
 				<hr className="w-full border-gray-300" />
 				<span className="absolute -top-2.5 px-2 bg-white">
-					{"common:text-or"}
+					{"Or"}
 				</span>
 			</div>
 			<Button
@@ -130,7 +130,7 @@ const LoginForm: React.FC = () => {
 				onClick={handelSocialLogin}
 			>
 				<ImFacebook2 className="text-sm sm:text-base me-1.5" />
-				{"common:text-login-with-facebook"}
+				{"Login With Facebook"}
 			</Button>
 			<Button
 				loading={isLoading}
@@ -139,16 +139,16 @@ const LoginForm: React.FC = () => {
 				onClick={handelSocialLogin}
 			>
 				<ImGoogle2 className="text-sm sm:text-base me-1.5" />
-				{"common:text-login-with-google"}
+				{"Login With Google"}
 			</Button>
 			<div className="text-sm sm:text-base text-body text-center mt-5 mb-1">
-				{"common:text-no-account"}{" "}
+				{"Don't have any account?"}{" "}
 				<button
 					type="button"
 					className="text-sm sm:text-base text-heading underline font-bold hover:no-underline focus:outline-none"
 					onClick={handleSignUp}
 				>
-					{"common:text-register"}
+					{"Register"}
 				</button>
 			</div>
 		</div>

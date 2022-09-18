@@ -8,6 +8,8 @@ import BestSellerProduct from '@/components/product/feeds/best-seller-product';
 import BannerCard from '@/components/common/banner-card';
 import { homeCollectionBanner as banner } from "@/framework/basic-rest/static/banner";
 import { ROUTES } from '@/utils/routes';
+import ExclusiveBlock from '@/containers/exclusive-block';
+import NewArrivalsProduct from '@/components/product/feeds/new-arrivals-product';
 
 export default function Home() {
   return (
@@ -24,8 +26,8 @@ export default function Home() {
 					href={`${ROUTES.COLLECTIONS}/${banner[2].slug}`}
 					className="mb-12 lg:mb-14 xl:mb-16 pb-0.5 lg:pb-1 xl:pb-0"
 				/>
-        {/* new arrivale */}
-        {/* exclusive */}
+        <NewArrivalsProduct/>
+        <ExclusiveBlock className="mb-12 md:mb-14 xl:mb-16 px-2.5 mx-auto max-w-[1920px]"/>
         <BestSellerProduct/>
       </Container>
     </>

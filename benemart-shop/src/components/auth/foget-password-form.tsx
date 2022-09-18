@@ -38,7 +38,7 @@ const ForgetPasswordForm = () => {
 					<Logo />
 				</div>
 				<p className="text-sm md:text-base text-body mt-3 sm:mt-4 mb-8 sm:mb-10">
-					{"common:forgot-password-helper"}
+					{"We'll send you a link to reset your password"}
 				</p>
 			</div>
 			<form
@@ -47,38 +47,38 @@ const ForgetPasswordForm = () => {
 				noValidate
 			>
 				<Input
-					labelKey="forms:label-email"
+					labelKey="Email"
 					type="email"
 					variant="solid"
 					className="mb-4"
 					{...register("email", {
-						required: `${"forms:email-required"}`,
+						required: `${"email required"}`,
 						pattern: {
 							value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-							message: "forms:email-error",
+							message: "email error",
 						},
 					})}
 					errorKey={errors.email?.message}
 				/>
 
 				<Button type="submit" className="h-11 md:h-12 w-full mt-2">
-					{"common:text-reset-password"}
+					{"Password"}
 				</Button>
 			</form>
 			<div className="flex flex-col items-center justify-center relative text-sm text-heading mt-8 sm:mt-10 mb-6 sm:mb-7">
 				<hr className="w-full border-gray-300" />
 				<span className="absolute -top-2.5 px-2 bg-white">
-					{"common:text-or"}
+					{"Or"}
 				</span>
 			</div>
 			<div className="text-sm sm:text-base text-body text-center">
-				{"common:text-back-to"}{" "}
+				{"Back to"}{" "}
 				<button
 					type="button"
 					className="text-sm sm:text-base text-heading underline font-bold hover:no-underline focus:outline-none"
 					onClick={handleSignIn}
 				>
-					{"common:text-login"}
+					{"Login"}
 				</button>
 			</div>
 		</div>
