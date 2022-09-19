@@ -7,4 +7,5 @@ export const ROUTES = {
   POLICY: "/privacy",
   COLLECTIONS: "/collections",
   SEARCH: "/search",
+  PRODUCT: `/products`,
 };

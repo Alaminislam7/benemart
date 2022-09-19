@@ -61,7 +61,7 @@ const Breadcrumb: React.FC<{ separator?: string }> = ({ separator = "/" }) => {
 	return (
 		<BreadcrumbItems separator={separator}>
 			<ActiveLink href={"/"} activeClassName="font-semibold text-heading">
-				<a>{t("breadcrumb-home")}</a>
+				<a>home</a>
 			</ActiveLink>
 
 			{breadcrumbs?.map((breadcrumb: any) => (

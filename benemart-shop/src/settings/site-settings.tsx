@@ -28,7 +28,7 @@ export const siteSettings = {
       {
         id: 1,
         path: "/search?q=men-wear",
-        label: "men-wear",
+        label: "Men Wear",
         columns: [
           {
             id: 1,
@@ -296,7 +296,7 @@ export const siteSettings = {
       {
         id: 2,
         path: "/search?q=women-wear",
-        label: "women-wear",
+        label: "Women Wear",
         columns: [
           {
             id: 1,
@@ -564,7 +564,7 @@ export const siteSettings = {
       {
         id: 3,
         path: "/search?q=casual-wear",
-        label: "casual-wear",
+        label: "Casual Wear",
         columns: [
           {
             id: 1,
@@ -832,12 +832,12 @@ export const siteSettings = {
       {
         id: 4,
         path: "/search",
-        label: "search",
+        label: "Search",
       },
       {
         id: 5,
         path: "/",
-        label: "pages",
+        label: "Pages",
         subMenu: [
           {
             id: 1,
@@ -918,7 +918,7 @@ export const siteSettings = {
       {
         id: 1,
         path: "/search?q=men-wear",
-        label: "men-wear",
+        label: "Men Wear",
         subMenu: [
           {
             id: 1,
@@ -1161,12 +1161,12 @@ export const siteSettings = {
       {
         id: 2,
         path: "/search?q=women-wear",
-        label: "women-wear",
+        label: "Women Wear",
       },
       {
         id: 3,
         path: "/search?q=casual-wear",
-        label: "casual-wear",
+        label: "Casual Wear",
         subMenu: [
           {
             id: 1,
@@ -1409,12 +1409,12 @@ export const siteSettings = {
       {
         id: 4,
         path: "/search",
-        label: "search",
+        label: "Search",
       },
       {
         id: 5,
         path: "/",
-        label: "pages",
+        label: "Pages",
         subMenu: [
           {
             id: 1,

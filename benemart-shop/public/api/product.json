@@ -39,18 +39,8 @@
     },
     {
       "id": 2,
-      "thumbnail": "/assets/images/products/p-20-2.png",
-      "original": "/assets/images/products/p-20-2.png"
-    },
-    {
-      "id": 3,
       "thumbnail": "/assets/images/products/p-20-3.png",
       "original": "/assets/images/products/p-20-3.png"
-    },
-    {
-      "id": 4,
-      "thumbnail": "/assets/images/products/p-20-4.png",
-      "original": "/assets/images/products/p-20-4.png"
     }
   ],
   "price": 50,
