@@ -13,9 +13,9 @@ const ManagedDrawer = () => {
 			open={displayCart}
 			placement={dir === "rtl" ? "left" : "right"}
 			onClose={closeCart}
-			handler={false}
-			showMask={true}
-			level={null}
+			// handler={false}
+			// showMask={true}
+			// level={null}
 			contentWrapperStyle={contentWrapperCSS}
 		>
 			Cart Count
