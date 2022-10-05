@@ -8,7 +8,7 @@ import SwiperCore, {
   Scrollbar,
 } from 'swiper';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
-import { NavigationOptions } from 'swiper/types/components/navigation';
+// import { NavigationOptions } from 'swiper/types/components/navigation';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
