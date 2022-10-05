@@ -22,6 +22,10 @@ const productGalleryCarouselResponsive = {
 	},
 };
 
+type ProductSingleDetails = {
+	children: JSX.Element | JSX.Element[]
+  }
+
 const ProductSingleDetails: React.FC = () => {
 	const {
 		query: { slug },
@@ -176,23 +180,7 @@ const ProductSingleDetails: React.FC = () => {
 								{data?.category?.name}
 							</Link>
 						</li>
-						{data?.tags && Array.isArray(data.tags) && (
-							<li className="productTags">
-								<span className="font-semibold text-heading inline-block pe-2">
-									Tags:
-								</span>
-								{data.tags.map((tag) => (
-									<Link
-										key={tag.id}
-										href={tag.slug}
-										className="inline-block pe-1.5 transition hover:underline hover:text-heading last:pe-0"
-									>
-										{tag.name}
-										<span className="text-heading">,</span>
-									</Link>
-								))}
-							</li>
-						)}
+						
 					</ul>
 				</div>
 

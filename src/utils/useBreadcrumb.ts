@@ -8,7 +8,6 @@ export const convertBreadcrumbTitle = (string: string) => {
       .replace(/ae/g, "ä")
       .replace(/ue/g, "ü")
       .toLowerCase();
-
 }
 
 

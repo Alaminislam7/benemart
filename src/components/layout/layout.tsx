@@ -3,8 +3,11 @@ import Header from "@/components/layout/header/header";
 import { NextSeo } from "next-seo";
 import MobileNavigation from "@/components/layout/mobile-navigation/mobile-navigation";
 
+type Props = {
+  children: React.ReactNode
+}
 
-const Layout: React.FC = ({ children }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div>
       <NextSeo

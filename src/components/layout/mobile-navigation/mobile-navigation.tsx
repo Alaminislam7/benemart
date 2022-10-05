@@ -82,9 +82,9 @@ const BottomNavigation: React.FC = () => {
 				placement={dir === "rtl" ? "right" : "left"}
 				open={displaySidebar}
 				onClose={closeSidebar}
-				handler={true}
-				showMask={true}
-				level={null}
+				// handler={true}
+				// showMask={true}
+				// level={null}
 				contentWrapperStyle={contentWrapperCSS}
 			>
 				<MobileMenu />
