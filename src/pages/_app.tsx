@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import type { NextPageContext } from 'next';
 import { useRef } from "react";
 import { ManagedUIContext } from "@/contexts/ui.context";
 import { QueryClient, QueryClientProvider } from "react-query";
@@ -15,10 +16,19 @@ import "@/styles/custom-plugins.css";
 import '@/styles/tailwind.css';
 import ManagedModal from '@/components/common/modal/managed-modal';
 import ManagedDrawer from '@/components/common/drawer/managed-drawer';
+import type { DehydratedState } from '@tanstack/react-query';
+
+type PageProps = {
+  dehydratedState?: DehydratedState;
+};
+
+type ExtendedAppProps<P = {}> = {
+  err?: NextPageContext['err'];
+} & AppProps<P>;
 
 const Noop: React.FC = ({ children }:any ) => <>{children}</>;
 
-const CustomApp = ({ Component, pageProps }: AppProps) => {
+function CustomApp ({ Component, pageProps, err }: ExtendedAppProps<PageProps>) {
 
   const queryClientRef = useRef<any>();
 	if (!queryClientRef.current) {
@@ -42,5 +52,4 @@ const CustomApp = ({ Component, pageProps }: AppProps) => {
     
   );
 }
-
 export default CustomApp;

@@ -21,6 +21,7 @@
     "@fontsource/open-sans": "^4.5.11",
     "@fontsource/satisfy": "^4.5.6",
     "@reach/portal": "^0.17.0",
+    "@tanstack/react-query": "^4.10.1",
     "@types/react-star-rating-component": "^1.4.1",
     "@types/swiper": "^6.0.0",
     "axios": "^0.27.2",
