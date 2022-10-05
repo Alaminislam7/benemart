@@ -16,7 +16,7 @@ import '@/styles/tailwind.css';
 import ManagedModal from '@/components/common/modal/managed-modal';
 import ManagedDrawer from '@/components/common/drawer/managed-drawer';
 
-const Noop: React.FC = ({ children }) => <>{children}</>;
+const Noop: React.FC = ({ children }:any ) => <>{children}</>;
 
 const CustomApp = ({ Component, pageProps }: AppProps) => {
 
